@@ -1,0 +1,15 @@
+com/main/worldgenerator/generator/gpu/PerlinNoiseGeneratorGPU.class
+com/main/worldgenerator/Core.class
+com/main/worldgenerator/generator/gpu/SimplexNoiseGeneratorGPU.class
+com/main/worldgenerator/generator/cpu/SimplexOctaveGeneratorCPU.class
+com/main/worldgenerator/generator/cpu/PerlinNoiseGeneratorCPU.class
+com/main/worldgenerator/generator/gpu/NoiseGeneratorGPU.class
+com/main/worldgenerator/generator/gpu/SimplexOctaveGeneratorGPU.class
+com/main/worldgenerator/generator/NewChunkGeneratorGPU$1.class
+com/main/worldgenerator/generator/cpu/NoiseGeneratorCPU.class
+com/main/worldgenerator/generator/gpu/OctaveGeneratorGPU.class
+com/main/worldgenerator/generator/NewChunkGeneratorGPU.class
+com/main/worldgenerator/generator/cpu/SimplexNoiseGeneratorCPU.class
+com/main/worldgenerator/generator/cpu/OctaveGeneratorCPU.class
+com/main/worldgenerator/generator/NewChunkGenerator.class
+com/main/worldgenerator/generator/gpu/OctaveGeneratorGPU$1.class

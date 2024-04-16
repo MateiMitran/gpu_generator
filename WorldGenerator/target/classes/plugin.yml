@@ -1,0 +1,11 @@
+name: 'WorldGenerator'
+version: 1.0-SNAPSHOT
+main: com.main.worldgenerator.Core
+prefix: 'WorldGen'
+load: STARTUP
+api-version: '1.20'
+author: 'Shockbyte'
+description: 'GPU Chunk Generation'
+world-generators:
+  world:
+    generator: com.main.worldgenerator.NewChunkGeneratorGPU
