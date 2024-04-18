@@ -87,7 +87,7 @@ public class OctaveGeneratorGPU extends Kernel {
                     int BA = permGPU[B] + Z;
                     int BB = permGPU[B + 1] + Z;
                     double out = NoiseGeneratorGPU.lerp(fZ, NoiseGeneratorGPU.lerp(fY, NoiseGeneratorGPU.lerp(fX, NoiseGeneratorGPU.grad(permGPU[AA], x[0], y[0], z[0]), NoiseGeneratorGPU.grad(permGPU[BA], x[0] - 1.0D, y[0], z[0])), NoiseGeneratorGPU.lerp(fX, NoiseGeneratorGPU.grad(permGPU[AB], x[0], y[0] - 1.0D, z[0]), NoiseGeneratorGPU.grad(permGPU[BB], x[0] - 1.0D, y[0] - 1.0D, z[0]))), NoiseGeneratorGPU.lerp(fY, NoiseGeneratorGPU.lerp(fX, NoiseGeneratorGPU.grad(permGPU[AA + 1], x[0], y[0], z[0] - 1.0D), NoiseGeneratorGPU.grad(permGPU[BA + 1], x[0] - 1.0D, y[0], z[0] - 1.0D)), NoiseGeneratorGPU.lerp(fX, NoiseGeneratorGPU.grad(permGPU[AB + 1], x[0], y[0] - 1.0D, z[0] - 1.0D), NoiseGeneratorGPU.grad(permGPU[BB + 1], x[0] - 1.0D, y[0] - 1.0D, z[0] - 1.0D))));
-//
+
                     result[0] += out * amp[0];
                     freq[0] *= frequency;
                     amp[0] *= amplitude;
