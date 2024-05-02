@@ -13,13 +13,13 @@ public class OpenSimplexNoiseTest
     public static void main(String[] args)
             throws IOException {
 
-        OpenSimplexNoise noise = new OpenSimplexNoise();
+        OpenSimplex2NoiseGenerator openSimplex2NoiseGenerator = new OpenSimplex2NoiseGenerator();
         BufferedImage image = new BufferedImage(WIDTH, HEIGHT, BufferedImage.TYPE_INT_RGB);
         for (int y = 0; y < HEIGHT; y++)
         {
             for (int x = 0; x < WIDTH; x++)
             {
-                double value = noise.eval(x / FEATURE_SIZE, y / FEATURE_SIZE, 0.0);
+                double value = openSimplex2NoiseGenerator.noise3_ImproveXZ(12345L,x / FEATURE_SIZE, y / FEATURE_SIZE, 0.0);
                 int rgb = 0x010101 * (int)((value + 1) * 127.5);
                 image.setRGB(x, y, rgb);
             }
